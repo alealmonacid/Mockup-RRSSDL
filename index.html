@@ -17,6 +17,8 @@
     <!-- Required scripts -->
     <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
 
     <!--Estilo LogIn-->
     <style>
@@ -71,14 +73,14 @@
                 <div class="login">
                     <div class="centrarbtn">
                         <p>Inicia sesión con</p>
-                        <b-button type="submit" variant="outline-dark"><img src="https://img.icons8.com/fluent/48/000000/google-logo.png" width="30%"/>   <b>Google</b></b-button>
+                        <b-button type="submit" variant="outline-dark"><b-icon-google></b-icon-google>  <b>Google</b></b-button>
                     </div>
                     <hr>
                     <p class="centrartxt">Iniciar sesión con credencial</p>
                     
                     <b-form>
                         <b-form-group>
-                            <b-form-input type="email" placeholder="Tu correo electrónico">                    </b-input-group>
+                            <b-form-input type="email" placeholder="Tu correo electrónico"></b-input-group>
                         </b-form-group>
                         <b-form-group>
                             <b-form-input type="password" placeholder="Tu contraseña">
