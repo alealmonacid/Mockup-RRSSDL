@@ -100,7 +100,9 @@
             float: right;
         }
         .imgusupub{
-            float: right;
+            position: absolute;
+            top: -35px;
+            left: -20px;
         }
         .comentarios{
             padding: 5%;
@@ -231,10 +233,11 @@
             <div class="fondo">
                 <b-container fluid>
                 <b-row>
-                    <b-col xl="8" lg="8" md="12" sm="12" cols="12">
+                    <b-col xl="9" lg="8" md="12" sm="12" cols="12">
                         <div class="fondopublicacion altura">
                             <!--Publicacion Solo texto-->
                             <div class="crearpub py-5">
+                            
                             <b-row class="mx-5">
                                 <b-col xl="2" lg="2" md="2" sm="2" cols="2">
                                     <img class="imgusupub" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="100%">
@@ -252,93 +255,99 @@
                                     
                                 </b-col>
                             </b-row>
-                            
                             </div>
-                            <b-card class="publicacion">
-                                <b-card-header>                                        <b-row>
-                                        <b-col xl="2" lg="3" md="2" sm="6" cols="6">
-                                            <img src="https://electronicssoftware.net/wp-content/uploads/user.png" width="75px">
-                                        </b-col>
-                                        <b-col xl="10" lg="9" md="10" sm="6" cols="6" class="nompub">
-                                            <h5>Alejandro Almonacid</h5>
-                                            <p>Gen 5 Front-End Dev</p>
-                                        </b-col>
-                                    </b-row>
-                                </b-card-header>
-                                <small class="text-muted pl-3">Last updated 3 mins ago</small>
-                                <b-card-text class="px-5 py-2">
-                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit nisi molestiae distinctio ea iste neque dolore voluptatem 
-                                        hic et explicabo voluptate, magnam quam laboriosam laudantium placeat harum aut voluptas?</h6>
-                                </b-card-text>
-                                <b-card-footer class="fondocardfooter">
-                                    <b-button-group class="btngrupito">
-                                        <b-button class="btncomentario"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up> Me gusta</b-button>
-                                        <b-button class="btncomentario"><b-icon-chat-square-text variant="success"></b-icon-chat-square-text> Comentar</b-button>
-                                        <b-button class="btncomentario"><b-icon-eye-slash-fill variant="warning"></b-icon-eye-slash-fill> Deshabilitar</b-button>
-                                        <b-button class="btncomentario"><b-icon-trash-fill variant="danger"></b-icon-trash-fill>Eliminar</b-button>
-                                    </b-button-group>
-                                </b-card-footer>
-                              </b-card>
-                              <b-card class="publicacion">
-                                <b-card-header>
-                                    <b-row>
-                                        <b-col xl="2" lg="3" md="2" sm="6" cols="6">
-                                            <img src="https://electronicssoftware.net/wp-content/uploads/user.png" width="75px">
-                                        </b-col>
-                                        <b-col xl="10" lg="9" md="10" sm="6" cols="6" class="nompub">
-                                            <h5>Alejandro Almonacid</h5>
-                                            <p>Gen 5 Front-End Dev</p>
-                                        </b-col>
-                                    </b-row>
-                                </b-card-header>
-                                <small class="text-muted pl-3">Last updated 3 mins ago</small>
-                                <b-card-text class="px-5 py-2">
-                                    <h3>Lindo mi papi ♥</h3>
-                                </b-card-text>
-                                <b-card-img src="https://www.milenio.com/uploads/media/2020/06/28/cantante-celebro-redes-sociales-instagram_100_18_874_544.jpg" alt="Image" bottom></b-card-img>
-
-                                <b-card-footer class="fondocardfooter">
-                                    <b-button-group class="btngrupito">
-                                        <b-button class="btncomentario"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up> Me gusta</b-button>
-                                        <b-button class="btncomentario"><b-icon-chat-square-text variant="success"></b-icon-chat-square-text> Comentar</b-button>
-                                        <b-button class="btncomentario"><b-icon-eye-slash-fill variant="warning"></b-icon-eye-slash-fill> Deshabilitar</b-button>
-                                        <b-button class="btncomentario"><b-icon-trash-fill variant="danger"></b-icon-trash-fill>Eliminar</b-button>
-                                    </b-button-group>
-                                </b-card-footer>
-                                <b-card-body>
-                                    <div class="comentarios">
-                                        <div class="comUsu">
-                                            <b-row>
-                                                <b-col xl="2" lg="3" md="2" sm="6" cols="6">
-                                                    <img class="imgusupub" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="50px">
+                            <b-row>
+                                <b-col xl="6" lg="12" md="12" sm="12" cols="12">
+                                    <b-card class="publicacion">
+                                        <b-card-header>                                        <b-row>
+                                                <b-col xl="4" lg="6" md="2" sm="6" cols="6">
+                                                    <img src="https://electronicssoftware.net/wp-content/uploads/user.png" width="75px">
                                                 </b-col>
-                                                <b-col xl="10" lg="9" md="10" sm="6" cols="6" class="nompub">
+                                                <b-col xl="8" lg="6" md="10" sm="6" cols="6" class="nompub">
                                                     <h5>Alejandro Almonacid</h5>
-                                                </b-col>
-                                                <b-col xl="12" lg="12" md="12" sm="12" cols="12" class="py-3">
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore omnis ipsam architecto quisquam sunt, esse dolorum molestias autem dolore explicabo iste maxime quibusdam. In ullam explicabo sit ducimus ratione nostrum.
+                                                    <p>Gen 5 Front-End Dev</p>
                                                 </b-col>
                                             </b-row>
-                                            <a href="#"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up><span class="text-muted"> 10 likes</span></a>
-                                            <a href="#"><b-icon-chat-square-text variant="primary"></b-icon-chat-square-text><span class="text-muted"> Responder</span></a>
-                                            <a href="#"><b-icon-trash-fill variant="danger"></b-icon-trash-fill><span class="text-muted"> Borrar</span></a>
-                                            <a href="#"><b-icon-eye-slash-fill variant="danger"></b-icon-eye-slash-fill><span class="text-muted"> Bloquear Usuario</span></a>
-                                            <div class="respuesta my-2">
-                                            <b-form-textarea rows="3" max-rows="5" class="formComentario" type="text" placeholder="Responder a Alejandro"></b-form-textarea>
-                                            <b-button class="btnPublicarComentario" variant="primary">responder</b-button>
-                                        </div>
-                                        </div>
-                                        <div class="comentarPublicacion">
-                                            <b-form-textarea rows="3" max-rows="5" class="formComentario" type="text" placeholder="¿Qué estás pensando, Alejandro"></b-form-textarea>
-                                            <b-button class="btnPublicarComentario" variant="primary">Comentar</b-button>
-                                        </div>
-                                    </div>
-                                </b-card-body>
-                              </b-card>
-                              
+                                        </b-card-header>
+                                        <small class="text-muted pl-3">Last updated 3 mins ago</small>
+                                        <b-card-text class="px-5 py-2">
+                                            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit nisi molestiae distinctio ea iste neque dolore voluptatem 
+                                                hic et explicabo voluptate, magnam quam laboriosam laudantium placeat harum aut voluptas?</h6>
+                                        </b-card-text>
+                                        <b-card-footer class="fondocardfooter">
+                                            <b-button-group class="btngrupito">
+                                                <b-button class="btncomentario"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up> Me gusta</b-button>
+                                                <b-button class="btncomentario"><b-icon-chat-square-text variant="success"></b-icon-chat-square-text> Comentar</b-button>
+                                                <b-button class="btncomentario"><b-icon-eye-slash-fill variant="warning"></b-icon-eye-slash-fill> Deshabilitar</b-button>
+                                                <b-button class="btncomentario"><b-icon-trash-fill variant="danger"></b-icon-trash-fill>Eliminar</b-button>
+                                            </b-button-group>
+                                        </b-card-footer>
+                                      </b-card>
+                                </b-col>
+                                <b-col xl="6" lg="12" md="12" sm="12" cols="12">
+                                    <b-card class="publicacion">
+                                        <b-card-header>
+                                            <b-row>
+                                                <b-col xl="4" lg="6" md="2" sm="6" cols="6">
+                                                    <img src="https://electronicssoftware.net/wp-content/uploads/user.png" width="75px">
+                                                </b-col>
+                                                <b-col xl="8" lg="6" md="10" sm="6" cols="6" class="nompub">
+                                                    <h5>Alejandro Almonacid</h5>
+                                                    <p>Gen 5 Front-End Dev</p>
+                                                </b-col>
+                                            </b-row>
+                                        </b-card-header>
+                                        <small class="text-muted pl-3">Last updated 3 mins ago</small>
+                                        <b-card-text class="px-5 py-2">
+                                            <h3>Lindo mi papi ♥</h3>
+                                        </b-card-text>
+                                        <b-card-img src="https://www.milenio.com/uploads/media/2020/06/28/cantante-celebro-redes-sociales-instagram_100_18_874_544.jpg" alt="Image" bottom></b-card-img>
+        
+                                        <b-card-footer class="fondocardfooter">
+                                            <b-button-group class="btngrupito">
+                                                <b-button class="btncomentario"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up> Me gusta</b-button>
+                                                <b-button class="btncomentario"><b-icon-chat-square-text variant="success"></b-icon-chat-square-text> Comentar</b-button>
+                                                <b-button class="btncomentario"><b-icon-eye-slash-fill variant="warning"></b-icon-eye-slash-fill> Deshabilitar</b-button>
+                                                <b-button class="btncomentario"><b-icon-trash-fill variant="danger"></b-icon-trash-fill>Eliminar</b-button>
+                                            </b-button-group>
+                                        </b-card-footer>
+                                        <b-card-body>
+                                            <div class="comentarios">
+                                                <div class="comUsu">
+                                                    <b-row>
+                                                        <b-col xl="1" lg="1" md="1" sm="4" cols="4">
+                                                            <img class="imgusupub" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="50px">
+                                                        </b-col>
+                                                        <b-col xl="11" lg="11" md="11" sm="8" cols="8" class="nompub">
+                                                            <h5>Alejandro Almonacid</h5>
+                                                        </b-col>
+                                                        <b-col xl="12" lg="12" md="12" sm="12" cols="12" class="py-3">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore omnis ipsam architecto quisquam sunt, esse dolorum molestias autem dolore explicabo iste maxime quibusdam. In ullam explicabo sit ducimus ratione nostrum.
+                                                        </b-col>
+                                                    </b-row>
+                                                    <a href="#"><b-icon-hand-thumbs-up variant="primary"></b-icon-hand-thumbs-up><span class="text-muted"> 10 likes</span></a>
+                                                    <a href="#"><b-icon-chat-square-text variant="primary"></b-icon-chat-square-text><span class="text-muted"> Responder</span></a>
+                                                    <a href="#"><b-icon-trash-fill variant="danger"></b-icon-trash-fill><span class="text-muted"> Borrar</span></a>
+                                                    <a href="#"><b-icon-eye-slash-fill variant="danger"></b-icon-eye-slash-fill><span class="text-muted"> Bloquear Usuario</span></a>
+                                                    <div class="respuesta my-2">
+                                                    <b-form-textarea rows="3" max-rows="5" class="formComentario" type="text" placeholder="Responder a Alejandro"></b-form-textarea>
+                                                    <b-button class="btnPublicarComentario" variant="primary">responder</b-button>
+                                                </div>
+                                                </div>
+                                                <div class="comentarPublicacion">
+                                                    <b-form-textarea rows="3" max-rows="5" class="formComentario" type="text" placeholder="¿Qué estás pensando, Alejandro"></b-form-textarea>
+                                                    <b-button class="btnPublicarComentario" variant="primary">Comentar</b-button>
+                                                </div>
+                                            </div>
+                                        </b-card-body>
+                                      </b-card>
+                                </b-col>
+                            
+                             
+                            </b-row>
                         </div> 
                     </b-col>
-                    <b-col xl="4" lg="4" md="12" sm="12" cols="12">
+                    <b-col xl="3" lg="4" md="12" sm="12" cols="12">
                         <div class="mt-5">
                             <label><h3>Mensajes</h3></label>
                             <div>
