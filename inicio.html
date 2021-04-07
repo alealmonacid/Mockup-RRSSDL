@@ -121,6 +121,7 @@
             margin-top: 5%;
             margin-bottom: 5%;
         }
+
         /*CSS Scroll*/
         ::-webkit-scrollbar {
  width: 8px;
@@ -158,7 +159,7 @@
                             <em>Hola! Alejandro</em>
                           </template>
                           <b-dropdown-item href="#">Mi Perfil</b-dropdown-item>
-                          <b-dropdown-item href="#">Cerrar Sesión</b-dropdown-item>
+                          <b-dropdown-item href="index.html">Cerrar Sesión</b-dropdown-item>
                         </b-nav-item-dropdown>
                       </b-navbar-nav>
                     </b-collapse>
@@ -338,7 +339,48 @@
                         </div> 
                     </b-col>
                     <b-col xl="4" lg="4" md="12" sm="12" cols="12">
-                        <h1>Derecho</h1>
+                        <div class="mt-5">
+                            <label><h3>Mensajes</h3></label>
+                            <div>
+                                chat
+                            </div>
+                          </div>
+                        <div class="mt-5">
+                            <label><h3>Calendario</h3></label>
+                            <div>
+                                <b-calendar v-model="value" :min="min" :max="max" locale="es"></b-calendar>
+                            </div>
+                          </div>
+                          <div class="mt-5">
+                            <label><h3>Eventos</h3></label>
+                            <div>
+                                <b-card
+                                  overlay
+                                  img-src="https://picsum.photos/900/250/?image=3"
+                                  img-alt="Card Image"
+                                  text-variant="white"
+                                  title="Evento"
+                                  sub-title="Subtitle"
+                                >
+                                  <b-card-text>
+                                    Some quick example text to build on the card and make up the bulk of the card's content.
+                                  </b-card-text>
+                                </b-card>
+                              </div>
+                          </div>
+                          
+                          <div class="mt-5">
+                            <label><h3>Avisos de empleo</h3></label>
+                            <div>
+                               
+                            </div>
+                          </div>
+                          <div class="mt-5">
+                            <label><h3>Playlist de la semana</h3></label>
+                            <div>
+                                <iframe src="https://open.spotify.com/embed/playlist/1rEzcCeI7JC2SDEy7FycJL" width="100%" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                          </div>
                     </b-col>
                 </b-row>
                 </b-container>
