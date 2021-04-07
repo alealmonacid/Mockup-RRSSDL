@@ -92,7 +92,11 @@
             cursor: pointer;
         }
         .btnPublicar{
-            border-radius: 0px 0px 25px 25px;
+            border-radius: 0px 25px 25px 0px;
+            float: right;
+        }
+        .btnPublicarFoto{
+            border-radius: 25px 0px 0px 25px;
             float: right;
         }
         .imgusupub{
@@ -218,10 +222,15 @@
                                 </b-col>
                                 <b-col xl="10" lg="10" md="10" sm="10" cols="10" >
                                     <b-form-textarea rows="3" max-rows="5" class="formpublicacion" type="text" placeholder="¿Qué estás pensando, Alejandro"></b-form-textarea>
+                                    <div v-if="img == true">
                                     <b-input-group prepend="URL de imagen" class="mb-2">
                                         <b-form-input placeholder="https://url.dominio/path.jpg"></b-form-input>
                                       </b-input-group>
+                                    </div>
                                     <b-button class="btnPublicar" variant="primary">Publicar</b-button>
+                                    <b-button v-if="img==false" class="btnPublicarFoto" variant="success" @click="cargarIMG()">Subir Foto</b-button>
+                                    <b-button v-else class="btnPublicarFoto" variant="danger" @click="nocargarIMG()">No subir Foto</b-button>
+                                    
                                 </b-col>
                             </b-row>
                             
@@ -299,12 +308,19 @@
         window.app = new Vue({
             el: '#app',
             data: {
-                name: ''
+                name: '',
+                img: false
             },
+
             computed: {
-                showAlert() {
-                    return this.name.length > 4 ? true : false
-                }
+                
+
+                cargarIMG(){
+                        return this.img = true;
+                },
+                nocargarIMG(){
+                    return this.img = false;
+                },
             }
         })
     </script>
