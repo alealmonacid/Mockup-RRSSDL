@@ -123,6 +123,11 @@
             margin-top: 5%;
             margin-bottom: 5%;
         }
+        .secpriv{
+            background-color: #d7dfec ;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
         /*CSS Scroll*/
         ::-webkit-scrollbar {
@@ -198,6 +203,8 @@
                                     Avisos de pega
                                     Sec. Distracción
                                 -->
+                                <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
+                                <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
                                 <b-nav-item href="#link-2" @click="hide">Inicio</b-nav-item>
                                 <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
                                 <b-nav-item href="#link-2" @click="hide">Blog</b-nav-item>
@@ -205,8 +212,7 @@
                                 <b-nav-item href="#link-2" @click="hide">Noticias</b-nav-item>
                                 <b-nav-item href="#link-2" @click="hide">Eventos</b-nav-item>
                                 <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Marketlace</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Inicio</b-nav-item>
+                                <b-nav-item href="#link-2" @click="hide">Marketplace</b-nav-item>
                             </b-nav>
                           </nav>
                           <b-button variant="primary" block @click="hide">Cerrar Menú</b-button>
@@ -233,6 +239,49 @@
             <div class="fondo">
                 <b-container fluid>
                 <b-row>
+                    <b-col xl="3" lg="4" md="12" sm="12" cols="12" class="secpriv">
+                        <div class="mt-5">
+                            <label><h3>Mensajes</h3></label>
+                            <div>
+                                chat
+                            </div>
+                          </div>
+                        <div class="mt-5">
+                            <label><h3>Calendario</h3></label>
+                            <div>
+                                <b-calendar v-model="value" :min="min" :max="max" locale="es"></b-calendar>
+                            </div>
+                          </div>
+                          <div class="mt-5">
+                            <label><h3>Eventos</h3></label>
+                            <div>
+                                <b-card
+                                  overlay
+                                  img-src="https://picsum.photos/900/250/?image=3"
+                                  img-alt="Card Image"
+                                  text-variant="white"
+                                  title="Evento"
+                                  sub-title="Subtitle">
+                                  <b-card-text>
+                                    Some quick example text to build on the card and make up the bulk of the card's content.
+                                  </b-card-text>
+                                </b-card>
+                              </div>
+                          </div>
+                          
+                          <div class="mt-5">
+                            <label><h3>Avisos de empleo</h3></label>
+                            <div>
+                               
+                            </div>
+                          </div>
+                          <div class="mt-5">
+                            <label><h3>Playlist de la semana</h3></label>
+                            <div>
+                                <iframe src="https://open.spotify.com/embed/playlist/1rEzcCeI7JC2SDEy7FycJL" width="100%" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                          </div>
+                    </b-col>
                     <b-col xl="9" lg="8" md="12" sm="12" cols="12">
                         <div class="fondopublicacion altura">
                             <!--Publicacion Solo texto-->
@@ -347,50 +396,7 @@
                             </b-row>
                         </div> 
                     </b-col>
-                    <b-col xl="3" lg="4" md="12" sm="12" cols="12">
-                        <div class="mt-5">
-                            <label><h3>Mensajes</h3></label>
-                            <div>
-                                chat
-                            </div>
-                          </div>
-                        <div class="mt-5">
-                            <label><h3>Calendario</h3></label>
-                            <div>
-                                <b-calendar v-model="value" :min="min" :max="max" locale="es"></b-calendar>
-                            </div>
-                          </div>
-                          <div class="mt-5">
-                            <label><h3>Eventos</h3></label>
-                            <div>
-                                <b-card
-                                  overlay
-                                  img-src="https://picsum.photos/900/250/?image=3"
-                                  img-alt="Card Image"
-                                  text-variant="white"
-                                  title="Evento"
-                                  sub-title="Subtitle"
-                                >
-                                  <b-card-text>
-                                    Some quick example text to build on the card and make up the bulk of the card's content.
-                                  </b-card-text>
-                                </b-card>
-                              </div>
-                          </div>
-                          
-                          <div class="mt-5">
-                            <label><h3>Avisos de empleo</h3></label>
-                            <div>
-                               
-                            </div>
-                          </div>
-                          <div class="mt-5">
-                            <label><h3>Playlist de la semana</h3></label>
-                            <div>
-                                <iframe src="https://open.spotify.com/embed/playlist/1rEzcCeI7JC2SDEy7FycJL" width="100%" height="330" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                            </div>
-                          </div>
-                    </b-col>
+                    
                 </b-row>
                 </b-container>
             </div>
