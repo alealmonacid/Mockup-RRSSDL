@@ -21,6 +21,12 @@
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
 
+    <style>
+        .compas{
+            margin: 2%;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -85,7 +91,7 @@
                                         <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
                                         <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
                                         <b-nav-item href="inicio.html" @click="hide">Inicio</b-nav-item>
-                                        <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
+                                        <b-nav-item href="saladeclase.html" @click="hide">Sala de Clases</b-nav-item>
                                         <b-nav-item href="blog.html" @click="hide">Noticias/Eventos</b-nav-item>
                                         <b-nav-item href="#link-2" @click="hide">Foro</b-nav-item>
                                         <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
@@ -317,7 +323,99 @@
                             </div>
                         </b-col>
                         <b-col xl="9" lg="8" md="12" sm="12" cols="12">
-
+                            <b-row>
+                                <b-col xl="7" lg="7" md="7" sm="12" cols="12">
+                                    <div class="postFondo">
+                                        <h4>Materia de Curso</h4>
+                                        <div class="accordion" role="tablist">
+                                            <b-card no-body class="mb-1">
+                                              <b-card-header header-tag="header" class="p-1" role="tab">
+                                                <b-button block v-b-toggle.accordion-1 variant="info">Modulo 1</b-button>
+                                              </b-card-header>
+                                              <b-collapse id="accordion-1" visible accordion="my-accordion" role="tabpanel">
+                                                <b-card-body>
+                                                  <b-card-text>
+                                                      <ul>
+                                                          <li>1</li>
+                                                          <li>2</li>
+                                                          <li>3</li>
+                                                          <li>4</li>
+                                                          <li>5</li>
+                                                          <li>6</li>
+                                                          <li>7</li>
+                                                          <li>8</li>
+                                                      </ul>
+                                                  </b-card-text>
+                                                </b-card-body>
+                                              </b-collapse>
+                                            </b-card>
+                                        
+                                            <b-card no-body class="mb-1">
+                                              <b-card-header header-tag="header" class="p-1" role="tab">
+                                                <b-button block v-b-toggle.accordion-2 variant="info">Modulo 2</b-button>
+                                              </b-card-header>
+                                              <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
+                                                <b-card-body>
+                                                  <b-card-text>
+                                                    <b-card-text>
+                                                        <ul>
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                            <li>3</li>
+                                                            <li>4</li>
+                                                            <li>5</li>
+                                                            <li>6</li>
+                                                            <li>7</li>
+                                                            <li>8</li>
+                                                        </ul>
+                                                    </b-card-text>
+                                                  </b-card-text>
+                                                </b-card-body>
+                                              </b-collapse>
+                                            </b-card>
+                                        
+                                            <b-card no-body class="mb-1">
+                                              <b-card-header header-tag="header" class="p-1" role="tab">
+                                                <b-button block v-b-toggle.accordion-3 variant="info">Modulo 3</b-button>
+                                              </b-card-header>
+                                              <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
+                                                <b-card-body>
+                                                  <b-card-text>
+                                                    <b-card-text>
+                                                        <ul>
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                            <li>3</li>
+                                                            <li>4</li>
+                                                            <li>5</li>
+                                                            <li>6</li>
+                                                            <li>7</li>
+                                                            <li>8</li>
+                                                        </ul>
+                                                    </b-card-text>
+                                                  </b-card-text>
+                                                </b-card-body>
+                                              </b-collapse>
+                                            </b-card>
+                                          </div>
+                                    </div>
+                                </b-col>
+                                <b-col xl="4" lg="4" md="4" sm="12" cols="12">
+                                    <div class="postFondo">
+                                        <h4>Mis Compañeros</h4>
+                                        <div class="compas">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                            <img style="margin-left: 5px;" src="https://electronicssoftware.net/wp-content/uploads/user.png" width="10%">
+                                        </div>
+                                    </div>
+                                </b-col>
+                            </b-row>
                         </b-col>
 
                     </b-row>
