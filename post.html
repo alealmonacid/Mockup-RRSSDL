@@ -21,6 +21,10 @@
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
 
+    <style>
+
+    </style>
+
 </head>
 
 <body>
@@ -82,14 +86,14 @@
                                     Avisos de pega
                                     Sec. Distracción
                                 -->
-                                <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
-                                <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
-                                <b-nav-item href="inicio.html" @click="hide">Inicio</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
-                                <b-nav-item href="blog.html" @click="hide">Noticias/Eventos</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Foro</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Marketplace</b-nav-item>
+                                        <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
+                                        <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
+                                        <b-nav-item href="inicio.html" @click="hide">Inicio</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
+                                        <b-nav-item href="blog.html" @click="hide">Noticias/Eventos</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Foro</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Marketplace</b-nav-item>
                                     </b-nav>
                                 </nav>
                                 <b-button variant="primary" block @click="hide">Cerrar Menú</b-button>
@@ -98,21 +102,7 @@
                     </b-sidebar>
                 </div>
             </div>
-            <!--FIN NAVBAR-->
-            <!--PAGINA DE INICIO
-            
-            1) Publicaciones hechas por los usuario (Muro) lado derecho
-            en el muro podrá ver publicaciones igual que el usuario, con la opcion extra de poder eliminar dicha publicacion
-
-            ejemplo:
-            footer de la publicacion, existirá lo siguiente
-            Reacciones - Comentarios (v-if v-else) - Deshabilitar comentarios (v-if v-else) - Eliminar publicación
-
-            ésto existirá igual, en los comentarios de la publicación
-            Reacción - Responder - Borrar Comentario
-
-            2) 
-            -->
+ 
             <div class="fondo">
                 <b-container fluid>
                     <b-row>
@@ -124,11 +114,11 @@
                                 <div>
                                     <b-card img-src="https://picsum.photos/600/300/?image=25" img-alt="Image" img-top
                                         tag="article" style="max-width: 20rem;" class="mb-2">
-                                        <b-card-text style="padding:1rem;">
+                                        <b-card-text>
                                             <h2>Titulo Evento</h2>
                                             <p>Resumen</p>
                                         </b-card-text>
-                                        <b-card-footer>
+                                        <b-card-footer >
                                             <a href="">Ir a Evento</a>
                                         </b-card-footer>
 
@@ -316,52 +306,46 @@
                                 </div>
                             </div>
                         </b-col>
-                        <b-col xl="9" lg="8" md="12" sm="12" cols="12">
-                            <div class="blogPost">
-                                <b-row>
-                                    <b-col xl="6" lg="6" md="6" sm="12" cols="12" class="mb-2">
-                                        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                            <b-row no-gutters>
-                                              <b-col md="6">
-                                                <b-card-img src="https://i.blogs.es/bedeb1/sms2/2560_3000.jpeg" style="height: 100%;" alt="Image" class="rounded-0"></b-card-img>
-                                              </b-col>
-                                              <b-col md="6">
-                                                <b-card-body style="padding: 10%;" title="Titulo">
-                                                  <b-card-text>
-                                                    El descalabro de Facebook deja una lección importante: los SMS no sirven como sistema de autenticación en dos pasos
-                                                  </b-card-text>
-                                                  <kbd class="categoriaPost">Seguridad Informática</kbd>
-                                                </b-card-body>
-                                                <b-card-footer><a href="post.html">Leer más</a></b-card-footer>
-                                              </b-col>
-                                            </b-row>
-                                          </b-card>
-                                    </b-col>
-                                    <b-col xl="6" lg="6" md="6" sm="12" cols="12" class="mb-2">
-                                        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                            <b-row no-gutters>
-                                              <b-col md="6">
-                                                <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-                                              </b-col>
-                                              <b-col md="6">
-                                                <b-card-body style="padding: 10%;" title="Horizontal Card">
-                                                  <b-card-text>
-                                                    This is a wider card with supporting text as a natural lead-in to additional content.
-                                                    This content is a little bit longer.
-                                                  </b-card-text>
-                                                </b-card-body>
-                                              </b-col>
-                                            </b-row>
-                                          </b-card>
-                                    </b-col>
-                                    
+                        <b-col xl="9" lg="8" md="12" sm="12" cols="12" class="slide2">
+                            <div class="postFondo">
+                                <b-jumbotron class="imgPost" style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(https://i.blogs.es/bedeb1/sms2/2560_3000.jpeg);background-repeat: no-repeat;background-size: 100%;">
+                                    <template>
+                                        <div>
+                                            <kbd class="categoriaPost">Seguridad Informática</kbd>
+                                            <h2 class="tituloPost">El descalabro de Facebook deja una lección importante: los SMS no sirven como sistema de autenticación en dos pasos</h2>
+                                        </div>
+                                        <div class="sectCompartir">
+                                            <h6>Compartir:</h6> 
+                                            <b-icon-facebook class="iconCompartir"></b-icon-facebook>
+                                            <b-icon-linkedin class="iconCompartir"></b-icon-linkedin>
+                                            <b-icon-twitter class="iconCompartir"></b-icon-twitter>
+                                            <b-icon-mailbox class="iconCompartir"></b-icon-mailbox>
+                                        </div>
+                                    </template>
+                                  </b-jumbotron>
+                                  <b-container>
+                                    <h6>533 millones de usuarios han quedado "desnudos". La última y escandalosa filtración de datos de usuarios de Facebook es la enésima demostración de cómo una empresa negligente pone en riesgo no ya nuestra privacidad, sino nuestra seguridad e incluso nuestros ahorros.</h6>
 
-                                    
-                                </b-row>
-                               
+                                    <h6>Los datos filtrados exponen ahora a millones de usuarios a ser víctimas de ataques de suplantación de identidad y otros ciberataques dirigidos. El peligro es enorme, y este nuevo descalabro de Facebook es la última advertencia de un tema delicado: el SMS no es un buen método de autenticación en dos pasos.</h6>
+
+                                    <h2>Ten miedo. Mucho miedo.</h2>
+
+                                    <h6>Nuestra dependencia del mundo digital es cada vez mayor, y aunque las ventajas de la revolución móvil son evidentes, <b>también dejan efectos colaterales nada agradables.</b></h6>
+
+                                    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x80em3u" width="100%" height="100%" allowfullscreen > </iframe> </div>
+                                    <br>
+                                    <h6>Hasta no hace mucho parecía bastar con una protección de un único paso (usuario/contraseña), pero los robos masivos de contraseñas y malas prácticas por parte de los usuarios (usar y reutilizar '123456' como contraseña es una idea atroz) hicieron que los métodos de autenticación en dos pasos (2FA) fueran mucho más recomendables a la hora de proteger cuentas en todo tipo de servicios.</h6>
+
+                                  </b-container>
+                                  
+                                  <div class="comentarPublicacion">
+                                    <b-form-textarea rows="3" max-rows="5" class="formComentario"
+                                        type="text" placeholder="¿Qué opinas, Alejandro">
+                                    </b-form-textarea>
+                                    <b-button class="btnPublicarComentario" variant="primary">
+                                        Comentar</b-button>
+                                </div>
                             </div>
-                            
-                              
                         </b-col>
 
                     </b-row>

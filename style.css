@@ -348,3 +348,228 @@
 .paddingProfile{
     padding: 5%;
 }
+/*BLOG POST*/
+.slide2{
+    overflow-y: scroll;
+    height: 918px;
+}
+.postFondo{
+    background-color: white;
+    padding: 5%;
+    border-radius: 25px;
+    margin-top: 2%;
+}
+.categoriaPost{
+    background-color: green;
+    
+}
+.imgPost{
+    width: 100%;
+    height: 350px;
+}
+.tituloPost{
+    margin-top: 20px;
+    padding: 2%;
+    color: white;
+    text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.68);        
+}
+.sectCompartir{
+    color: white;
+    float: right;
+}
+.jumbotronPega{
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+.iconCompartir{
+    height: 25px;
+    width: 25px;
+    margin: 5px 10px 0px 0px;
+}
+
+/*CSS Pagina Blog*/
+/*CSS BUSCADOR Y PEGA*/
+.tituloBP {
+    text-align: center;
+    padding: 2%;
+}
+
+.buscador {
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
+    border-radius: 25px;
+}
+
+.formBuscador {
+    float: right;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width : 767px) {
+    .formBuscador {
+        float: left;
+        margin-top: 20px;
+    }
+}
+
+/*CARDS OFERTAS LABORALES*/
+.cardColor-1{
+    background-color: #6F78C5;
+    color: white;
+}
+.cardColor-1:hover{
+    background-color: #646baf;
+    color: white;
+    text-decoration: none;
+}
+
+.cardColor-2{
+    background-color: #c56fc2;
+    color: white;
+}
+.cardColor-2:hover{
+    background-color: #a35ca1;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-3{
+    background-color: #c56f6f;
+    color: white;
+}
+.cardColor-3:hover{
+    background-color: #a75d5d;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-4{
+    background-color: #84c56f;
+    color: white;
+}
+.cardColor-4:hover{
+    background-color: #6fa75d;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-5{
+    background-color: #a0c56f;
+    color: white;
+}
+.cardColor-5:hover{
+    background-color: #81a059;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-6{
+    background-color: #193849;
+    color: white;
+}
+.cardColor-6:hover{
+    background-color: #26556e;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-7{
+    background-color: #6fadc5;
+    color: white;
+}
+.cardColor-7:hover{
+    background-color: #598ca0;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-8{
+    background-color: #f2f6f7;
+    color: #2b355f;
+}
+.cardColor-8:hover{
+    background-color: #c0c4c5;
+    color: #2b355f;
+    text-decoration: none;
+}
+.cardColor-9{
+    background-color: #026cb6;
+    color: white;
+}
+.cardColor-9:hover{
+    background-color: #035692;
+    color: white;
+    text-decoration: none;
+}
+.cardColor-0{
+    background-color: #2cbbaf;
+    color: white;
+}
+.cardColor-0:hover{
+    background-color: #23998f;
+    color: white;
+    text-decoration: none;
+}
+.cardBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    border-radius: 4px;
+    flex-grow: 2;
+    margin: 7px;
+    min-width: 32%;
+}
+.cardBox__titulo{
+    display: flex;
+    align-items: center;
+}
+.cardBox_avatar{
+    position: relative;
+    width: 72px;
+    height: 72px;
+    margin-right: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+.cardCargo{
+    font-weight: 900;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+.cardExtra{
+    margin-left: 23px;
+    max-width: 85px;
+    float:right;
+}
+.containerJob{
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 29px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.cardsJobs{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 625px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*FIN CARDS OFERTAS LABORALES*/
+
+/*Pega*/
+.iconEmpleador{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+}
+.footerPega{
+    text-align: center;
+    padding: 5%;
+}

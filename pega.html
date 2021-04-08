@@ -20,7 +20,9 @@
     <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
     <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.min.js"></script>
-
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -82,14 +84,14 @@
                                     Avisos de pega
                                     Sec. Distracción
                                 -->
-                                <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
-                                <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
-                                <b-nav-item href="inicio.html" @click="hide">Inicio</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
-                                <b-nav-item href="blog.html" @click="hide">Noticias/Eventos</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Foro</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
-                                <b-nav-item href="#link-2" @click="hide">Marketplace</b-nav-item>
+                                        <b-nav-item href="#link-1" @click="hide">Administrar Noticias</b-nav-item>
+                                        <b-nav-item href="#link-1" @click="hide">Administrar Eventos</b-nav-item>
+                                        <b-nav-item href="inicio.html" @click="hide">Inicio</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Sala de Clases</b-nav-item>
+                                        <b-nav-item href="blog.html" @click="hide">Noticias/Eventos</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Foro</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Avisos</b-nav-item>
+                                        <b-nav-item href="#link-2" @click="hide">Marketplace</b-nav-item>
                                     </b-nav>
                                 </nav>
                                 <b-button variant="primary" block @click="hide">Cerrar Menú</b-button>
@@ -98,21 +100,7 @@
                     </b-sidebar>
                 </div>
             </div>
-            <!--FIN NAVBAR-->
-            <!--PAGINA DE INICIO
-            
-            1) Publicaciones hechas por los usuario (Muro) lado derecho
-            en el muro podrá ver publicaciones igual que el usuario, con la opcion extra de poder eliminar dicha publicacion
 
-            ejemplo:
-            footer de la publicacion, existirá lo siguiente
-            Reacciones - Comentarios (v-if v-else) - Deshabilitar comentarios (v-if v-else) - Eliminar publicación
-
-            ésto existirá igual, en los comentarios de la publicación
-            Reacción - Responder - Borrar Comentario
-
-            2) 
-            -->
             <div class="fondo">
                 <b-container fluid>
                     <b-row>
@@ -124,11 +112,11 @@
                                 <div>
                                     <b-card img-src="https://picsum.photos/600/300/?image=25" img-alt="Image" img-top
                                         tag="article" style="max-width: 20rem;" class="mb-2">
-                                        <b-card-text style="padding:1rem;">
+                                        <b-card-text>
                                             <h2>Titulo Evento</h2>
                                             <p>Resumen</p>
                                         </b-card-text>
-                                        <b-card-footer>
+                                        <b-card-footer >
                                             <a href="">Ir a Evento</a>
                                         </b-card-footer>
 
@@ -317,51 +305,58 @@
                             </div>
                         </b-col>
                         <b-col xl="9" lg="8" md="12" sm="12" cols="12">
-                            <div class="blogPost">
-                                <b-row>
-                                    <b-col xl="6" lg="6" md="6" sm="12" cols="12" class="mb-2">
-                                        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                            <b-row no-gutters>
-                                              <b-col md="6">
-                                                <b-card-img src="https://i.blogs.es/bedeb1/sms2/2560_3000.jpeg" style="height: 100%;" alt="Image" class="rounded-0"></b-card-img>
-                                              </b-col>
-                                              <b-col md="6">
-                                                <b-card-body style="padding: 10%;" title="Titulo">
-                                                  <b-card-text>
-                                                    El descalabro de Facebook deja una lección importante: los SMS no sirven como sistema de autenticación en dos pasos
-                                                  </b-card-text>
-                                                  <kbd class="categoriaPost">Seguridad Informática</kbd>
-                                                </b-card-body>
-                                                <b-card-footer><a href="post.html">Leer más</a></b-card-footer>
-                                              </b-col>
-                                            </b-row>
-                                          </b-card>
-                                    </b-col>
-                                    <b-col xl="6" lg="6" md="6" sm="12" cols="12" class="mb-2">
-                                        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-                                            <b-row no-gutters>
-                                              <b-col md="6">
-                                                <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-                                              </b-col>
-                                              <b-col md="6">
-                                                <b-card-body style="padding: 10%;" title="Horizontal Card">
-                                                  <b-card-text>
-                                                    This is a wider card with supporting text as a natural lead-in to additional content.
-                                                    This content is a little bit longer.
-                                                  </b-card-text>
-                                                </b-card-body>
-                                              </b-col>
-                                            </b-row>
-                                          </b-card>
-                                    </b-col>
-                                    
-
-                                    
-                                </b-row>
-                               
+                            <div class="postFondo">
+                                <b-jumbotron style="background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url();background-repeat: no-repeat;background-size: 100%;">
+                                    <template>
+                                        <b-row class="jumbotronPega">
+                                            <b-col xl="2" lg="2" md="2" sm="2" cols="2">
+                                                <img class="iconEmpleador" src="https://cdn.icon-icons.com/icons2/206/PNG/64/Retro_Block_-_Question_(2)_24708.png">
+                                            </b-col>
+                                            <b-col xl="6" lg="6" md="6" sm="6" cols="6">
+                                                <strong style="color: white;">[Nombre Empresa]</strong><br>
+                                                <strong style="color: white;">Empresa Verificada</strong><br>
+                                                <strong style="color: white;">Pais: Chile</strong>
+                                            </b-col>
+                                            <b-col xl="4" lg="4" md="4" sm="4" cols="4">
+                                                <kbd class="taghtml5">HTML5</kbd>
+                                                <kbd class="tagvuejs">VueJs</kbd>
+                                                <kbd class="tagjs">JavaScript</kbd>
+                                                <kbd class="tagfirebase">Firebase</kbd>
+                                                <kbd class="tagscss">SCSS</kbd>
+                                                <kbd class="tagithub">Github</kbd>
+                                            </b-col>
+                                            <b-col xl="12" lg="12" md="12" sm="12" cols="12">
+                                            <h1 class="tituloPost">Full-Stack Developer (Node + React)</h1>
+                                            <p style="color: white;"><b-icon-wifi></b-icon-wifi> - Remoto - Full time | Programación | Nivel: Junior | Sueldo líquido: $2800 - 2900 USD/mes</p>
+                                            </b-col>
+                                            <b-col xl="6" lg="6" md="6" sm="6" cols="6">
+                                                <b-button size="lg" variant="info">Postula a este empleo</b-button>
+                                            </b-col>
+                                            <b-col xl="6" lg="6" md="6" sm="6" cols="6">
+                                                <div class="sectCompartir">
+                                                    <h6>Compartir:</h6> 
+                                                    <b-icon-facebook class="iconCompartir"></b-icon-facebook>
+                                                    <b-icon-linkedin class="iconCompartir"></b-icon-linkedin>
+                                                    <b-icon-twitter class="iconCompartir"></b-icon-twitter>
+                                                    <b-icon-mailbox class="iconCompartir"></b-icon-mailbox>
+                                                </div>
+                                            </b-col>
+                                        </b-row>
+                                        
+                                    </template>
+                                  </b-jumbotron>
+                                  <b-container style="margin-left: 10%; margin-right: 10%;">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab hic laudantium, ex dignissimos quasi dolore molestiae, enim nam perspiciatis exercitationem, provident sapiente totam perferendis autem mollitia dolorem cupiditate numquam!</p>
+                                </b-container>
+                                <div class="footerPega">
+                                <b-button size="lg" variant="info">Postula a este empleo</b-button> | <b-icon-emoji-angry-fill variant="danger"><a href="#"></b-icon-emoji-angry-fill> Reportar Empleo</a>
+                                </div>
                             </div>
-                            
-                              
                         </b-col>
 
                     </b-row>
