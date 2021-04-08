@@ -145,41 +145,92 @@
             background-color: #6F78C5;
             color: white;
         }
+        .cardColor-1:hover{
+            background-color: #646baf;
+            color: white;
+            text-decoration: none;
+        }
+
         .cardColor-2{
             background-color: #c56fc2;
             color: white;
+        }
+        .cardColor-2:hover{
+            background-color: #a35ca1;
+            color: white;
+            text-decoration: none;
         }
         .cardColor-3{
             background-color: #c56f6f;
             color: white;
         }
+        .cardColor-3:hover{
+            background-color: #a75d5d;
+            color: white;
+            text-decoration: none;
+        }
         .cardColor-4{
             background-color: #84c56f;
             color: white;
         }
-        .cardColor-5{
-            background-color: #6fadc5;
+        .cardColor-4:hover{
+            background-color: #6fa75d;
             color: white;
+            text-decoration: none;
+        }
+        .cardColor-5{
+            background-color: #a0c56f;
+            color: white;
+        }
+        .cardColor-5:hover{
+            background-color: #81a059;
+            color: white;
+            text-decoration: none;
         }
         .cardColor-6{
             background-color: #193849;
             color: white;
         }
+        .cardColor-6:hover{
+            background-color: #26556e;
+            color: white;
+            text-decoration: none;
+        }
         .cardColor-7{
             background-color: #6fadc5;
             color: white;
+        }
+        .cardColor-7:hover{
+            background-color: #598ca0;
+            color: white;
+            text-decoration: none;
         }
         .cardColor-8{
             background-color: #f2f6f7;
             color: #2b355f;
         }
+        .cardColor-8:hover{
+            background-color: #c0c4c5;
+            color: #2b355f;
+            text-decoration: none;
+        }
         .cardColor-9{
             background-color: #026cb6;
             color: white;
         }
+        .cardColor-9:hover{
+            background-color: #035692;
+            color: white;
+            text-decoration: none;
+        }
         .cardColor-0{
             background-color: #2cbbaf;
             color: white;
+        }
+        .cardColor-0:hover{
+            background-color: #23998f;
+            color: white;
+            text-decoration: none;
         }
         .cardBox{
             display: flex;
@@ -216,6 +267,7 @@
         .cardExtra{
             margin-left: 23px;
             max-width: 85px;
+            float:right;
         }
         .containerJob{
             width: 100%;
@@ -228,7 +280,13 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: space-between;
+            overflow-y: scroll;
+            height: 625px;
         }
+        a:hover{
+            text-decoration: none;
+        }
+        
         /*FIN CARDS OFERTAS LABORALES*/
     </style>
 </head>
@@ -546,12 +604,12 @@
                                     <b-row>
                                         <b-col xl="8" lg="8" md="8" sm="12" cols="12">
                                             <h5>Filtrar por:</h5>
-                                            <kbd class="taghtml5">HTML5</kbd>
-                                            <kbd class="tagvuejs">VueJs</kbd>
-                                            <kbd class="tagjs">JavaScript</kbd>
-                                            <kbd class="tagfirebase">Firebase</kbd>
-                                            <kbd class="tagscss">SCSS</kbd>
-                                            <kbd class="tagithub">Github</kbd>
+                                            <a href="#"><kbd class="taghtml5">HTML5</kbd></a>
+                                            <a href="#"><kbd class="tagvuejs">VueJs</kbd></a>
+                                            <a href="#"><kbd class="tagjs">JavaScript</kbd></a>
+                                            <a href="#"><kbd class="tagfirebase">Firebase</kbd></a>
+                                            <a href="#"><kbd class="tagscss">SCSS</kbd></a>
+                                            <a href="#"><kbd class="tagithub">Github</kbd></a>
                                         </b-col>
                                         <b-col xl="4" lg="4" md="4" sm="12" cols="12">
                                             <b-form inline class="formBuscador">
